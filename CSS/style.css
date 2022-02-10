@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    background-image: linear-gradient(-90deg,#00c6fb 20%, #005bea 80%);
+   
+}
+
+main{
+    width: 100%;
+    height: 100%;
+   
+}
+
+header{
+    width: 100%;
+    height: 4.375rem;
+}
+
+.container__menu{
+    width: 100%;
+    height: 4.375em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    background-color: antiquewhite;
+}
+
+.logo{
+   width: 12.5em;
+   margin-left: 3.125rem;
+}
+
+.logo img{
+    width: 100%;
+    height: 3.125em;
+}
+
+.container__nav{
+    width: 25em;
+    height: 1.875em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    width: 21.875em;
+    height: 1.875em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em; 
+}
+
+#contacto ul{
+    width: 9.375em;
+    height: 1.875em;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: .5em;
+    
+}
+
+#contacto ul li{
+    width: 6.25rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    height: 4.375rem;
+    display: flex;
+    align-items: center;
+}
+
+#contacto ul li:hover{
+   background-color: #00a650;
+}
+
+
+#contacto ul li img{
+   width: 1.25em;
+   height: 1.25em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+
+.button a[href="http://mpago.li/2zPRHpL"]{
+    width: 8.125rem;
+    height: 100%;
+    background-color: #00a650;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    border-radius: 0.625em;
+    font-size: 0.875em;
+}
+.button a img{
+    width: 1.25rem;
+    height: 1.875rem;
+    margin-left: 0.5rem;
+}
+
+.button a[href="http://mpago.li/2zPRHpL"]:hover{
+    box-shadow: 3px 2px 3px 3px  rgb(5, 97, 45);
+    background-color: rgb(0, 165, 0);
+    transition: all 300ms ;
+}
+
+.container__slide{
+    width: 59.375rem;
+    height: 31.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    min-height: 70vh;
+}
+
+.slider ul{
+  width: 950px;
+  display: flex;
+  align-items: center;
+  animation: slide 20s infinite alternate;
+}
+
+.slider ul:hover{
+   animation-play-state: paused;
+}
+
+.slider ul li{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.slider img{
+    width: 950px;
+    height: 28.125rem;
+}
+
+@keyframes slide {
+    0%{ margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.slider ul li:nth-of-type(4) img{
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.title{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #146da0;
+}
+
+.container__card{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4.375rem;
+}
+
+.list__cards{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 2.5em;
+}
+.list__cards:hover .card:not(:hover){
+   opacity: .3;
+}
+.card{
+    border: 1px solid antiquewhite;
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    width: 15.625rem;
+    height: 25rem;
+    border-radius: 0.9375em;
+}
+.card:hover{
+    box-shadow: -10px 25px 5px #00010228;
+    background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+    transform: translateY(-30px);
+    transition: all 300ms;
+}
+
+.card img{
+    width: 10.5em;
+    height: 13.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 8px 0px;
+}
+
+.text{
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    margin: 0.625em auto;
+    border: 1px solid rgb(136, 213, 236);
+    border-radius: 0.625em;
+}
+
+.text h3{
+    margin-top: 0.625em;
+}
+
+.text p{
+    width: 100%;
+    height: 100%;
+    margin: 1.25em auto;
+    font-weight: 400;
+}
+
+
+.buy{
+    font-weight: 700rem;
+    color: black;
+    width: 7.5rem;
+    height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #00a650;
+}
+
+.buy:hover{
+    background-color: #008842;
+    color: antiquewhite;
+}
+
+.footer{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    background-color: antiquewhite;
+}
+
+.copy{
+  width: 90%;
+  height: 2.5em;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.copy hr{
+  border: none;
+  border: 1px solid #7a7a7a;
+}
+
+.copy p{
+    margin-top: 0.625rem;
+    color: #7a7a7a;
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .list__cards{
+        flex-wrap: wrap;
+    }
+    .title{
+       min-height: 15vh;
+    }
+
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .body{
+        font-size: 12px;
+    }
+    .list__cards{
+        flex-wrap: wrap;
+    }
+    .container__slide{
+        width: 730px;
+        height: max-content;
+    }
+    .container__slide{
+        width: 700px;
+        height: 380px;
+        margin:40px auto;
+    }
+    .slider ul{
+        width: 700px;
+    }
+    .slider ul li{
+        height: 400px;
+        
+    }
+    .slider img{
+         width: 700px;
+         height: 380px;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:480px){
+    
+    .logo img{
+        height: 40px;
+        margin-left: 50%;
+    }
+    .container__menu{
+        height: 120px;
+    }
+    .container__nav{
+        margin-left: 10%;
+    }
+    .button{
+        width: 400px;
+        gap: 2em;
+    }
+    .button a[href="http://mpago.li/2zPRHpL"]{
+       font-size: 14px;
+       padding: 2px;
+    }
+
+    .button a img{
+        width: 16px
+    }
+    #contacto ul li img{
+        width: 1.5em;
+        height: 1.5em;
+     }
+     #contacto ul li{
+        width: 6.25rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        height: 2.25rem;
+    }
+    
+    .list__cards{
+        flex-wrap: wrap;
+    }
+    .container__slide{
+        width: 400px;
+        height: 200px;
+    }
+    .container__slide{
+        width: 400px;
+        height: 200px;
+        margin:20px auto;
+    }
+    .slider ul{
+        width: 400px;
+    }
+    .slider ul li{
+        height: 250px;
+        
+    }
+    .slider img{
+         width: 400px;
+         height: 250px;
+    }
+}
+
+@media screen and (max-width:320px){
+
+    .logo img{
+        height: 45px;
+        padding: 2px 0;
+    }
+    .container__menu{
+        height: 90px;
+    }
+    .container__nav{
+        width: 300px;
+    }
+    .button{
+        width: 280px;
+        gap: 1em;
+    }
+    .button a[href="http://mpago.li/2zPRHpL"]{
+       font-size: 11px;
+       padding: 2px;
+    }
+
+    .button a img{
+        width: 16px
+    }
+    #contacto ul li img{
+        width: 1em;
+        height: 1em;
+     }
+     #contacto ul li{
+        width: 6.25rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        height: 2.25rem;
+    }
+    .title{
+        margin-bottom:70px;
+        font-size: 18px;
+    }
+    .container__slide{
+        width: 300px;
+        height: 200px;
+        min-height: 40vh;
+        margin-top: 40px;
+    }
+    .slider ul{
+        width: 300px;
+        gap: 0;
+    }
+    .slider ul li{
+        height: 200px;
+        
+    }
+    .slider img{
+         width: 300px;
+         height: 200px;
+    }
+
+    .container__card{
+        padding: 0px;
+    }
+
+    .list__cards{
+        flex-wrap: wrap;
+        gap: 2.5em;
+        margin-bottom: 20px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .card a{
+        font-size: 13px;
+    }
+
+    .copy{
+        font-size: 12px;
+    }
+}
