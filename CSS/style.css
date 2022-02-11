@@ -346,21 +346,28 @@ header{
     }
 }
 
-@media screen and (min-width:321px) and (max-width:480px){
-    
+@media screen and (min-width:360px) and (max-width:480px){
+    .title{
+        font-size: 20px;
+        height: 0;
+    }
     .logo img{
+        width: 100%;
         height: 40px;
-        margin-left: 50%;
+        margin-left: 20px;
     }
     .container__menu{
+        display: block;
         height: 120px;
+        padding: 10px;
     }
     .container__nav{
-        margin-left: 10%;
+        margin-top: 20px;
+        width: 370px;
     }
     .button{
         width: 400px;
-        gap: 2em;
+        gap: 1.5em;
     }
     .button a[href="http://mpago.li/2zPRHpL"]{
        font-size: 14px;
@@ -385,24 +392,23 @@ header{
         flex-wrap: wrap;
     }
     .container__slide{
-        width: 400px;
-        height: 200px;
-    }
-    .container__slide{
-        width: 400px;
-        height: 200px;
-        margin:20px auto;
-    }
+        width: 340px;
+        height: 150px;
+        min-height: 60vh;
+    }   
     .slider ul{
-        width: 400px;
+        width: 340px;
     }
     .slider ul li{
-        height: 250px;
+        height: 200px;
         
     }
     .slider img{
-         width: 400px;
-         height: 250px;
+         width: 340px;
+         height: 200px;
+    }
+    .copy{
+        font-size: 12px;
     }
 }
 
